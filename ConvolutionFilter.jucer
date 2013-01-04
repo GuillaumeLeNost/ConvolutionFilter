@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="eStRaU" name="ConvolutionFilter" projectType="audioplug"
+              version="1.0.0" bundleIdentifier="com.GiomLondon.CF" buildVST="1"
+              buildRTAS="0" buildAU="1" pluginName="ConvolutionFilter" pluginDesc="ConvolutionFilter"
+              pluginManufacturer="GiomLondon" pluginManufacturerCode="GL" pluginCode="CF"
+              pluginChannelConfigs="{1, 2}," pluginIsSynth="0" pluginWantsMidiIn="0"
+              pluginProducesMidiOut="0" pluginSilenceInIsSilenceOut="0" pluginTailLength="0"
+              pluginEditorRequiresKeys="0" pluginAUExportPrefix="ConvolutionFilter"
+              pluginAUViewClass="ConvolutionFilter" pluginRTASCategory="Other"
+              jucerVersion="3.0.0" companyName="GiomLondon">
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX" objCExtraSuffix="BJ3RxL" juceFolder="~/juce"
+               vstFolder="~/SDKs/vstsdk2.4" extraLinkerFlags="-lfftw3">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="ConvolutionFilter"
+                       osxSDK="default" osxCompatibility="default" osxArchitecture="default"
+                       headerPath="../../Libraries " libraryPath="../../Libraries ; ../../Libraries/FFTW"/>
+        <CONFIGURATION name="Release" isDebug="0" optimisation="2" targetName="ConvolutionFilter"
+                       osxSDK="default" osxCompatibility="default" osxArchitecture="default"
+                       headerPath="../../Libraries" libraryPath="../../Libraries ; ../../Libraries/FFTW"/>
+      </CONFIGURATIONS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+  <MAINGROUP id="kPCv5M" name="ConvolutionFilter">
+    <GROUP id="{38FC0CE3-5F81-5B7A-03B2-8AC849F331FA}" name="Libraries">
+      <GROUP id="{BB087697-2CDB-A3A2-DCB2-18181150F6F7}" name="FFTW">
+        <FILE id="eoAuNa" name="fftw3.h" compile="0" resource="0" file="Libraries/FFTW/fftw3.h"/>
+        <FILE id="MVKqBU" name="libfftw3.a" compile="0" resource="1" file="Libraries/FFTW/libfftw3.a"/>
+      </GROUP>
+      <GROUP id="{8EED4EC4-7B71-94D8-0CA4-4ED6417F36AA}" name="DspFilters">
+        <FILE id="nww7Ki" name="Bessel.cpp" compile="1" resource="0" file="Libraries/DspFilters/Bessel.cpp"/>
+        <FILE id="LfSWJH" name="Bessel.h" compile="0" resource="0" file="Libraries/DspFilters/Bessel.h"/>
+        <FILE id="LsFJFF" name="Biquad.cpp" compile="1" resource="0" file="Libraries/DspFilters/Biquad.cpp"/>
+        <FILE id="yEEgVF" name="Biquad.h" compile="0" resource="0" file="Libraries/DspFilters/Biquad.h"/>
+        <FILE id="mG9iUe" name="Butterworth.cpp" compile="1" resource="0" file="Libraries/DspFilters/Butterworth.cpp"/>
+        <FILE id="TWNivf" name="Butterworth.h" compile="0" resource="0" file="Libraries/DspFilters/Butterworth.h"/>
+        <FILE id="HAV6Qd" name="Cascade.cpp" compile="1" resource="0" file="Libraries/DspFilters/Cascade.cpp"/>
+        <FILE id="KhqCdU" name="Cascade.h" compile="0" resource="0" file="Libraries/DspFilters/Cascade.h"/>
+        <FILE id="vf1COz" name="ChebyshevI.cpp" compile="1" resource="0" file="Libraries/DspFilters/ChebyshevI.cpp"/>
+        <FILE id="TdcAud" name="ChebyshevI.h" compile="0" resource="0" file="Libraries/DspFilters/ChebyshevI.h"/>
+        <FILE id="tTudkF" name="ChebyshevII.cpp" compile="1" resource="0" file="Libraries/DspFilters/ChebyshevII.cpp"/>
+        <FILE id="qTDquM" name="ChebyshevII.h" compile="0" resource="0" file="Libraries/DspFilters/ChebyshevII.h"/>
+        <FILE id="BsLphO" name="Common.h" compile="0" resource="0" file="Libraries/DspFilters/Common.h"/>
+        <FILE id="aMliSE" name="Custom.cpp" compile="1" resource="0" file="Libraries/DspFilters/Custom.cpp"/>
+        <FILE id="mcAB4s" name="Custom.h" compile="0" resource="0" file="Libraries/DspFilters/Custom.h"/>
+        <FILE id="dCe906" name="Design.cpp" compile="1" resource="0" file="Libraries/DspFilters/Design.cpp"/>
+        <FILE id="wI8dEs" name="Design.h" compile="0" resource="0" file="Libraries/DspFilters/Design.h"/>
+        <FILE id="cVHA8L" name="Documentation.cpp" compile="1" resource="0"
+              file="Libraries/DspFilters/Documentation.cpp"/>
+        <FILE id="KrqpaR" name="Dsp.h" compile="0" resource="0" file="Libraries/DspFilters/Dsp.h"/>
+        <FILE id="CZa3rl" name="Elliptic.cpp" compile="1" resource="0" file="Libraries/DspFilters/Elliptic.cpp"/>
+        <FILE id="YAEDE8" name="Elliptic.h" compile="0" resource="0" file="Libraries/DspFilters/Elliptic.h"/>
+        <FILE id="Ht2Wpv" name="Filter.cpp" compile="1" resource="0" file="Libraries/DspFilters/Filter.cpp"/>
+        <FILE id="aILz11" name="Filter.h" compile="0" resource="0" file="Libraries/DspFilters/Filter.h"/>
+        <FILE id="eaBvav" name="Layout.h" compile="0" resource="0" file="Libraries/DspFilters/Layout.h"/>
+        <FILE id="r4HNwe" name="Legendre.cpp" compile="1" resource="0" file="Libraries/DspFilters/Legendre.cpp"/>
+        <FILE id="zwIG5L" name="Legendre.h" compile="0" resource="0" file="Libraries/DspFilters/Legendre.h"/>
+        <FILE id="tBCbRO" name="MathSupplement.h" compile="0" resource="0"
+              file="Libraries/DspFilters/MathSupplement.h"/>
+        <FILE id="en1Ors" name="Param.cpp" compile="1" resource="0" file="Libraries/DspFilters/Param.cpp"/>
+        <FILE id="ygANXK" name="Params.h" compile="0" resource="0" file="Libraries/DspFilters/Params.h"/>
+        <FILE id="AMONzn" name="PoleFilter.cpp" compile="1" resource="0" file="Libraries/DspFilters/PoleFilter.cpp"/>
+        <FILE id="rQYNzW" name="PoleFilter.h" compile="0" resource="0" file="Libraries/DspFilters/PoleFilter.h"/>
+        <FILE id="DNPfy3" name="RBJ.cpp" compile="1" resource="0" file="Libraries/DspFilters/RBJ.cpp"/>
+        <FILE id="KtdeNb" name="RBJ.h" compile="0" resource="0" file="Libraries/DspFilters/RBJ.h"/>
+        <FILE id="X7FnLo" name="RootFinder.cpp" compile="1" resource="0" file="Libraries/DspFilters/RootFinder.cpp"/>
+        <FILE id="cVmWWD" name="RootFinder.h" compile="0" resource="0" file="Libraries/DspFilters/RootFinder.h"/>
+        <FILE id="Zv9rdu" name="SmoothedFilter.h" compile="0" resource="0"
+              file="Libraries/DspFilters/SmoothedFilter.h"/>
+        <FILE id="SHDkvl" name="State.cpp" compile="1" resource="0" file="Libraries/DspFilters/State.cpp"/>
+        <FILE id="oBtrgM" name="State.h" compile="0" resource="0" file="Libraries/DspFilters/State.h"/>
+        <FILE id="mKIaTl" name="Types.h" compile="0" resource="0" file="Libraries/DspFilters/Types.h"/>
+        <FILE id="zI5SRV" name="Utilities.h" compile="0" resource="0" file="Libraries/DspFilters/Utilities.h"/>
+      </GROUP>
+    </GROUP>
+    <GROUP id="{90AF5C7B-C1CA-31CE-FC52-246EDDF07A61}" name="Source">
+      <FILE id="jOOshi" name="FastFourierTransformer.cpp" compile="1" resource="0"
+            file="Source/FastFourierTransformer.cpp"/>
+      <FILE id="VSLbmD" name="FastFourierTransformer.h" compile="0" resource="0"
+            file="Source/FastFourierTransformer.h"/>
+      <FILE id="RxWFEn" name="MainPanel.cpp" compile="1" resource="0" file="Source/MainPanel.cpp"/>
+      <FILE id="yL5P8q" name="MainPanel.h" compile="0" resource="0" file="Source/MainPanel.h"/>
+      <FILE id="ZOeGQ2" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="uFUKbR" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="BahTDJ" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="PYunkR" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <MODULES>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_gui_audio" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_video" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="1"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_QUICKTIME="disabled"/>
+</JUCERPROJECT>
